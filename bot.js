@@ -19,7 +19,7 @@ client.on('message', message => {
 });
 
 bot.on('guildMemberAdd', member => {
-    defaultChannel.send("Bienvenue sur le serveur de Versus!\n" + member.displayName);
+    defaultChannel.send("Bienvenue sur le serveur de Versus " + member.displayName);
 })
 
 // THIS  MUST  BE  THIS  WAY
