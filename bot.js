@@ -6,8 +6,6 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var cmd = 'Voici les différentes commandes possibles sur le serveur Discord: !planning (afficher le planning de la semaine en cours), !rs (afficher les liens des réseaux sociaux)';
-    
     if (message.content === 'ping'){
         message.reply('pong');
     }
@@ -20,10 +18,6 @@ client.on('message', message => {
         message.reply('Notre page Instagram : https://www.instagram.com/versus.tv/');
         message.reply('Notre page Twitch : https://www.twitch.tv/tvversus');
     }
-    if (message.content === '!cmd'){
-        message.reply(cmd);   
-    }
-    
 });
 
 client.on('guildMemberAdd', member => {
