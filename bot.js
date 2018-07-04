@@ -18,12 +18,12 @@ client.on('message', message => {
     }
 });
 
-client.on('guildMemberAdd', member => {
-  member.createDM().then(channel => {
-    return channel.send('Bienvenue sur le serveur de Versus ' + member.displayName+' !')
-  }).catch(console.error)
-  message.send('Erreur !!');
-});
+client.on('guildMemberAdd', function (member) {
+    member.createDM().then(function (channel) {
+        return channel.send('Bienvenue sur le channel de Versus ! ' + member.displayName)
+ 
+    }).catch(console.error)
+})
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
