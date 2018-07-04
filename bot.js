@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var role = member.guild.roles.find("name", "Les Gens")
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -21,8 +22,8 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.find("name","général").send('Bienvenue sur le serveur de Versus ' + member.displayName +' !');
-    member.addRole(member.guild.roles.find("name", "Les Gens"));
+    member.guild.channels.find("id","général").send('Bienvenue sur le serveur de Versus ' + member.displayName +' !');
+    member.addRole(role);
 });
 
 // THIS  MUST  BE  THIS  WAY
