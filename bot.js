@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!planning') {
-    	message.reply('Voici le planning de cette semaine: ', {files: ["http://www.versustv.ch/wp-content/uploads/2018/07/planning27.png"]});
+    	message.reply('Voici le planning de cette semaine : ', {files: ["http://www.versustv.ch/wp-content/uploads/2018/07/planning27.png"]});
   	}
     if (message.content === '!rs'){
         message.reply('Notre page Facebook : https://www.facebook.com/CHVersusTV/');
