@@ -21,7 +21,7 @@ client.on('message', message => {
     }
 });
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
     defaultChannel.send("Bienvenue sur le serveur de Versus " + member.displayName);
 });
 
