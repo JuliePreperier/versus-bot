@@ -22,7 +22,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    defaultChannel.send("Bienvenue sur le serveur de Versus " + member.displayName);
+    client.channels.get(464079367765491725).send("Bienvenue sur le serveur de Versus " + member.displayName);
 });
 
 // THIS  MUST  BE  THIS  WAY
