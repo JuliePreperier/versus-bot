@@ -6,6 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.content === 'ping'){
+        message.reply('pong');
+    }
     if (message.content === '!planning') {
     	message.reply('Voici le planning de cette semaine : ', {files: ["http://www.versustv.ch/wp-content/uploads/2018/07/planning27.png"]});
   	}
