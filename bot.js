@@ -17,7 +17,7 @@ client.on('message', message => {
         message.reply('Notre page Twitter : https://www.twitter.com/versustv1');
         message.reply('Notre page Instagram : https://www.instagram.com/versus.tv/');
         message.reply('Notre page Twitch : https://www.twitch.tv/tvversus');
-        message.reply('Notre page web : https://www.versustv.ch/');
+        message.reply('Notre page web : https://www.versustv.ch');
     }
 });
 
