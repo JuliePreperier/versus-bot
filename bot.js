@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var cmd = 'Voici les différentes commandes possibles sur le serveur Discord:';
+    var cmd = 'Voici les différentes commandes possibles sur le serveur Discord: !planning (afficher le planning de la semaine en cours), !rs (afficher les liens des réseaux sociaux de l''association)';
     
     if (message.content === 'ping'){
         message.reply('pong');
