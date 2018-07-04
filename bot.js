@@ -19,10 +19,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', function (member) {
-    member.createDM().then(function (channel) {
-        return channel.send('Bienvenue sur le channel de Versus ! ' + member.displayName)
- 
-    }).catch(console.error)
+    client.send('Bienvenue sur le channel de Versus ! ' + member.displayName)
 })
 
 // THIS  MUST  BE  THIS  WAY
