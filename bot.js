@@ -21,7 +21,10 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    client.channels.get(464079367765491725).send("Bienvenue sur le serveur de Versus " + member.displayName);
+  member.createDM().then(channel => {
+    return channel.send('Bienvenue sur mon serveur ' + member.displayName)
+  }).catch(console.error)
+  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
 });
 
 // THIS  MUST  BE  THIS  WAY
