@@ -18,8 +18,8 @@ client.on('message', message => {
     }
 });
 
-client.on('guildMemberAdd', function (member) {
-    client.send('Bienvenue sur le channel de Versus ! ' + member.displayName)
+bot.on('guildMemberAdd', member => {
+    defaultChannel.send("Bienvenue sur le serveur de Versus!\n" + member.displayName);
 })
 
 // THIS  MUST  BE  THIS  WAY
