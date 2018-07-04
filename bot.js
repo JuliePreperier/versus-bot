@@ -18,9 +18,6 @@ client.on('message', message => {
         message.reply('Notre page Instagram : https://www.instagram.com/versus.tv/');
         message.reply('Notre page Twitch : https://www.twitch.tv/tvversus');
     }
-    if (message.content === '!cmd'){
-        message.reply('Voici les commandes possible sur le Discord de Versus:\n - !planning : voir le planning de la semaine en cours.\n - !rs : Voir les liens pour les réseaux sociaux de l''association.');   
-    }
 });
 
 client.on('guildMemberAdd', member => {
