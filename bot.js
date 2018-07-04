@@ -21,10 +21,9 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-  member.createDM().then(channel => {
-    return channel.send('Bienvenue sur mon serveur ' + member.displayName)
-  }).catch(console.error)
-  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
+    let role = member.guild.roles.find("name", "Les Gens");
+    member.guild.channels.find("name","accueil").send('Bienvenue sur le serveur de Versus ${member.user.username} !');
+    member.addRole(role);
 });
 
 // THIS  MUST  BE  THIS  WAY
