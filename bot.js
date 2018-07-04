@@ -22,9 +22,8 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    var role = member.guild.roles.find("name", "Les Gens");
     member.guild.channels.find("id","général").send('Bienvenue sur le serveur de Versus ' + member.displayName +' !');
-    member.addRole(role);
+    member.addRole('Les Gens');
 });
 
 // THIS  MUST  BE  THIS  WAY
