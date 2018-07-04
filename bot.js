@@ -18,6 +18,7 @@ client.on('message', message => {
         message.reply('Notre page Instagram : https://www.instagram.com/versus.tv/');
         message.reply('Notre page Twitch : https://www.twitch.tv/tvversus');
     }
+    
 });
 
 client.on('guildMemberAdd', member => {
