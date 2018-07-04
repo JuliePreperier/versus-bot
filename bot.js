@@ -9,13 +9,16 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
+    else if(message.content === '!planning'){
+        message.reply('Voici le planning de cette semaine: ', {files: ["http://www.versustv.ch/wp-content/uploads/2018/07/planning27.png"]});
+    }
 });
 
 client.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
     return channel.send('Bienvenue sur le serveur de Versus ' + member.displayName+' !')
   }).catch(console.error)
-  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
+  message.send('Erreur !!');
 });
 
 // THIS  MUST  BE  THIS  WAY
