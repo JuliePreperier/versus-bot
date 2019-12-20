@@ -11,7 +11,7 @@ client.on('message', message => {
         message.reply('pong');
     }
     else if (message.content === '!planning') {
-    	message.reply('Voici le planning de cette semaine : ', {files: ["https://www.versustv.ch/wp-content/uploads/2018/10/planning42.png"]});
+    	message.reply('Voici le planning de cette semaine : ', {files: ["https://www.versustv.ch/wp-content/uploads/2019/12/planning51.png"]});
   	}
     else if (message.content === '!rs'){
         message.reply('Notre page Facebook : https://www.facebook.com/CHVersusTV/');
